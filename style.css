@@ -58,11 +58,23 @@ img {
   font-weight: 900;
 }
 .options a:hover{
-  border-bottom:10px solid #98a869;
+  border-bottom:5px solid #98a869;
 }
 /*Nav styles end*/
 
 /*home styles*/
-
+.container{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+}
+.card{
+  background-color: #515856;
+  border-radius: 25px;
+  color: #E1EDC1;
+  padding: 15px 10px;
+  text-align: center;
+  width: 20rem;
+}
 
 /*home styles end*/
