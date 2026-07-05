@@ -20,9 +20,7 @@ a{
   font-size: 80px;
   font-weight: 900;
 }
-section{
-  margin-top: 50px;
-}
+
 /*universal styles end*/
 
 /*Nav styles*/
@@ -36,9 +34,9 @@ nav{
   margin-top: -15rem;
 }
 .img {
-  height: 22rem;
-  margin-top: -55px;
+  height: 15rem;
   position: sticky;
+  top: 0;
   width: 100%;
 }
 
@@ -52,7 +50,7 @@ img {
   gap: 55px;
 }
 .options a{
-  color: white;
+  color: #fff;
   font-family: "Noto Serif Oriya", serif;
   font-size: 38px;
   font-weight: 900;
@@ -63,6 +61,58 @@ img {
 /*Nav styles end*/
 
 /*home styles*/
+#home{
+  margin-top: 20px;
+}
+/*about styles*/
+.about .content {
+  color: #515856;
+  height: 400px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.content h1 {
+  font-size: 50px;
+}
+
+.content h1 span {
+  color: #98a869;
+  font-family: "Noto Serif Oriya", serif;
+}
+.content p{
+  font-style: 35px;
+  margin: 10px 0;
+}
+.links i {
+  align-items: center;
+  background-color: #23361a;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  font-size: 1.2rem;
+  height: 3rem;
+  justify-content: center;
+  margin: 5px 10px;
+  transition: 0.2s linear;
+  width: 3rem;
+}
+.content button {
+  background-color: #23361a;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 700;
+  height: 6vh;
+  margin-top: 20px;
+  outline: none;
+  transition: 0.2s linear;
+  width: 30%;
+}
+/*about styles end*/
+
 .container{
   display: grid;
   gap: 20px;
