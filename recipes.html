@@ -7,29 +7,73 @@
     <link rel="stylesheet" href="style.css">
     <style>
         #recipes{
-            align-items: center;
+            
             box-sizing: border-box;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
         .recipe-container{
             background-color: #98a869;
             border-radius: 20px;
             margin-top: 5rem;
-            min-width: 700px;
+            min-width: 400px;
             padding: 1.5rem;
-            width: 150px;
+            width: 90px;
         }
         .pic{
             align-items: center;
             border-radius: 15px;
-            height: 450px;
+            height: 250px;
             margin-bottom: 1.5rem;
-            width: 500px;
+            width: 300px;
         }
         .pic img{
             height: 100%;
             width: 100%;
+        }
+        .main-title{
+            color: #E1EDC1;
+            font-family: "Noto Serif Oriya", serif;
+            font-style: 25px;
+            font-weight: 800;
+            text-align: center;
+        }
+        ul, ol, li, p{
+            margin-bottom: 0.5rem;
+        }
+        ul, ol, p{
+            margin-bottom: 1.5rem;
+        }
+        .prep{
+            background-color: #E1EDC1;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+
+        }
+        .prep-title{
+            color: #98a869;
+            font-family: "Noto Serif Oriya", serif;
+            font-size: 25px;
+            margin-bottom: 1rem;
+        }
+        .prep-list, .ingredient-list, .instru-list{
+            padding-left: 2rem;
+        }
+        .prep-list li::marker{
+            color: #98a869;
+        }
+        h3{
+            color: #E1EDC1;
+            font-family: "Noto Serif Oriya", serif;
+            font-size: 40px;
+            font-weight: 800;
+        }
+        .ingredient-list, .instru-list{
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -45,18 +89,50 @@
                 </div>
             </nav>
         </div>
-        <section id="recipes">
         <h1 class="title">Simple Garden-to-table recipes</h1>
+        <section id="recipes">
         <div class="recipe-container">
             <h1 class="main-title">Lemon Peel Crinckle Cookie</h1>
-            <p class="descript">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quis quam, provident beatae facilis at. Dicta, nesciunt sequi. Veritatis, laudantium error? Ipsam animi dolorem quasi assumenda dolorum, laborum numquam veritatis?</p>
             <img src="Imgaes/Lemon-Crinkle.webp" alt="" class="pic">
+            <div class="prep">
+                <h2 class="prep-title">Garden-to-table tips</h2>
+                <ul class="prep-list">
+                    <li class="prep-list-item">Avoid adding too much flour or the cookies may become scone-like</li>
+                    <li class="prep-list-item">The dough should be softer than typical biscuit dough</li>
+                    <li class="prep-list-item">Remove from the oven when the centres are slightly underdone, they will form up as they cool</li>
+                </ul>
+            </div>
+            <h3 class="ingredient-title">Ingredients</h3>
+            <ul class="ingredient-list">
+                <li>Peels from 2 lemon(boiled until soft)</li>
+                <li>100g sugar</li>
+                <li>60ml oil</li>
+                <li>1 egg</li>
+                <li>180g flour</li>
+                <li>1 tsp baking powder</li>
+                <li>Icing sugar for rolling</li>
+            </ul>
+            <hr>
+            <h3 class="instru-title">Instructions</h3>
+            <ol class="instru-list">
+                <li>Blend peels, sugar, oil, and egg until smooth.</li>
+                <li>Mix in flour, baking powder and salt to form a soft dough.</li>
+                <li>Chill for 30-60 minutes.</li>
+                <li>If it's very sticky add 1 tbsp at a time.</li>
+                <li>Roll into balls and coat well in icing sugar.</li>
+                <li>Bake at 180&deg;C for 10-12 minutes.</li>
+            </ol>
+        </div>
+
+        <div class="recipe-container">
+            <h1 class="main-title">Spekboom Chutney</h1>
+            <img src="Imgaes/Spekboom Chutney.jpg" alt="" class="pic">
             <div class="prep">
                 <h2 class="prep-title">Preparation Time</h2>
                 <ul class="prep-list">
-                    <li class="prep-list-item">Total: Approximately 20 min</li>
-                    <li class="prep-list-item">Preparation: 5 min</li>
-                    <li class="prep-list-item">Bake: 15 mins</li>
+                    <li class="prep-list-item"><strong>Total:</strong> Approximately 20 min</li>
+                    <li class="prep-list-item"><strong>Preparation:</strong> 5 min</li>
+                    <li class="prep-list-item"><strong>Bake:</strong> 15 mins</li>
                 </ul>
             </div>
             <h3 class="ingredient-title">Ingredients</h3>
@@ -79,6 +155,93 @@
                 <li></li>
             </ol>
         </div>
+    
+         <div class="recipe-container">
+            <h1 class="main-title">Chickpea & Spekboom Salad</h1>
+        
+            <img src="Imgaes/chickpea.jpg" alt="" class="pic">
+           
+            <h3 class="ingredient-title">Ingredients</h3>
+            <ul class="ingredient-list">
+                <h4>For the crispy chickpeas</h4>
+                <li>400g can chickpeas(drained)</li>
+                <li>1 tbsp Olive oil</li>
+                <li>&half; tsp paprika</li>
+                <li>&half; tsp salt</li>
+                <li>&frac14; tsp black pepper</li>
+                <h4>For the Salad</h4>
+                <li>Handful spekboom leaves</li>
+                <li>&half; cucumber(sliced)</li>
+                <li>Handful sugar snap peas(sliced)</li>
+                <li>Handful basil leaves</li>
+                <li>&frac14; red onion(thinly sliced)</li>
+                <li>50-80g feta(crumbled)</li>
+                <h4>For the Vinaigrette</h4>
+                <li>3 tbsp olive oil</li>
+                <li>1 tbsp red wine vinegar</li>
+                <li>1 tsp dijon mustard</li>
+                <li>1 tsp honey</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <hr>
+            <h3 class="instru-title">Instructions</h3>
+            <ol class="instru-list">
+                <li>Toss chickpeas with the olive oil, paprika, salt and pepper. Air fry at 180&deg;C for 20 mins, shaking halfway until crispy</li>
+                <li>Whisk/shake together the olive oil, red wine vinegar, dijon mustard, honey, salt and pepper.</li>
+                <li>Combine the spekboom, cucumber, sugar snap peas, red onion and basil in aserving bowl.</li>
+                <li>Top with feta and crispy, cooled chickpeas.</li>
+                <li>Drizzle over the vinaigrette and serve immediately.</li>
+            </ol>
+        </div>
+    
+         <div class="recipe-container">
+            <h1 class="main-title">Basil & Nasturtium Pesto</h1>
+        
+            <img src="Imgaes/Basil pesto.jpg" alt="" class="pic">
+            <div class="prep">
+                <h2 class="prep-title">Garden-to-Table Tip</h2>
+                <p>Making pesto in a mortar and pestle bruises the herbs instead of cutting them, creating a beautifully textured pesto with a richer, fresher flavour.</p>
+            </div>
+            <h3 class="ingredient-title">Ingredients</h3>
+            <ul class="ingredient-list">
+                <li>15g Fresh Nasturtium leaves</li>
+                <li>15g Fresh Basil leaves</li>
+                <li>30g Toasted Cashew</li>
+                <li>15g Grated Parmesan</li>
+                <li>2 Garlic Cloves</li>
+                <li>60ml Extra Virgin Olive Oil </li>
+            </ul>
+            <hr>
+            <h3 class="instru-title">Instructions</h3>
+            <ol class="instru-list">
+                <li>Toast Cashews for 2-3 minutes.</li>
+                <li>Crush the garlic and salt into a smooth paste.</li>
+                <li>Add the toasted Cashews and grind until finely crushed.</li>
+                <li>Add the basil and nasturtium a handful at a time, grinding until they form a coarse paste.</li>
+                <li>Mix in the Parmesan</li>
+                <li>Slowly drizzle in the olive oil while stirring ubntil the pesto reaches your desired consistency.</li>
+                <li>Finish with a generous squeeze of fresh lemon and black pepper.</li>
+            </ol>
+        </div>
+        
+        <div class="recipe-container">
+            <h1 class="main-title">Garden Salad</h1>
+        
+            <img src="Imgaes/Green Salad with Tangy Basil Vinaigrette.jpg" alt="" class="pic">
+            <h3 class="ingredient-title">Ingredients</h3>
+            <ul class="ingredient-list">
+                <li>Fresh lettuce leaves</li>
+                <li>1 celery stalk(finely chopped)</li>
+                <li>&frac14; red onion(finely chopped)</li>
+                <li>1 kanzi apple</li>
+                <li>Juice of &half; lemon</li>
+                <li>2 pinches cracked black pepper</li>
+            </ul>
+            <hr>
+            <h3 class="instru-title">Instructions</h3>
+            <p>Mix everything together and serve immediately</p>
+        </div>
+
         </section>
 </body>
 </html>
